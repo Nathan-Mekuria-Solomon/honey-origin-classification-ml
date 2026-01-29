@@ -1,56 +1,74 @@
-# Decoding Honey Origins: FTIR-Based Botanical Classification with ML and DL
+# FTIR-Based Botanical Origin Classification of Honey Using ML and DL
 
-This repository contains the code and materials for a machine learning and deep learning study on classifying the botanical origin of honey using FTIR spectroscopy data.
+This repository contains code and materials for a machine learning and deep learning study on classifying the botanical origin of honey using FTIR spectroscopy data.
 
-The project was presented as a poster at an international academic conference and focuses on building reproducible, interpretable, and scalable models for food authenticity analysis.
+The project focuses on building reproducible and interpretable data analysis pipelines for food authenticity and quality assessment, and was presented as a poster at the MACKIE 2025 Conference.
+
+---
 
 ## Project Overview
 
-Honey composition varies with floral origin, affecting quality, flavor, and market value. Traditional identification methods are accurate but slow and labor-intensive. This project explores FTIR spectroscopy combined with machine learning and deep learning as a rapid, non-destructive alternative for botanical classification.
+Honey composition varies depending on floral source, influencing quality, flavor, and economic value. Conventional identification methods are accurate but time-consuming and laboratory-intensive.
 
-The work compares classical ML models with deep learning approaches and investigates which spectral regions contribute most to classification performance.
+This project explores FTIR spectroscopy combined with machine learning (ML) and deep learning (DL) as a rapid, non-destructive alternative for classifying the botanical origin of honey. The emphasis is on careful preprocessing, model validation, and interpretability rather than black-box performance.
+
+---
 
 ## Methods
 
-- FTIR spectra preprocessing and normalization  
+- FTIR spectral preprocessing and normalization  
 - Feature scaling and dimensionality reduction (PCA)  
-- Classical ML models: SVM, Logistic Regression, Decision Tree, Random Forest, Ensemble methods  
-- Deep learning: 1D Convolutional Neural Network  
+- Classical machine learning models:
+  - Logistic Regression  
+  - Support Vector Machines (SVM)  
+  - Decision Trees  
+  - Random Forest and ensemble methods  
+- Deep learning model:
+  - 1D Convolutional Neural Network (CNN)  
 - Model evaluation using accuracy and macro F1-score  
 - Feature importance analysis using Random Forest  
-- Visualization of latent structure using PCA and t-SNE  
+- Visualization of spectral structure using PCA and t-SNE  
 
-All analyses were performed in Python using scikit-learn and TensorFlow/Keras.
+All analyses were conducted in Python using standard scientific and machine learning libraries.
 
-## Results (Summary)
+---
 
-- Classical ML models achieved strong performance (up to ~96% accuracy).
-- CNN models achieved the highest performance, demonstrating stronger generalization.
-- Feature importance analysis showed that classification depends on distributed spectral regions rather than isolated peaks.
-- Results support FTIR + ML/DL as a robust framework for rapid honey authentication.
+## Results Summary
+
+- Classical ML models achieved strong classification performance (up to ~96% accuracy).
+- The CNN model provided the highest overall performance and better generalization.
+- Feature importance analysis indicated that classification depends on distributed spectral regions rather than isolated peaks.
+- Results support FTIR combined with ML/DL as a robust framework for honey authentication and origin classification.
+
+---
 
 ## Repository Structure
 
-- `src/` – Core Python scripts for data processing, modeling, and evaluation  
-- `figures/` – Plots and visual outputs (PCA, feature importance, model results)  
+- `src/` – Python scripts for data processing, modeling, and evaluation  
+- `figures/` – Visualization outputs (PCA plots, feature importance, model comparisons)  
 - `poster/` – Conference poster presented for this work  
+
+---
 
 ## Conference Presentation
 
-This work was presented as a poster:
+This work was presented as a poster at the **MACKIE 2025 Conference**.
 
-**“Decoding Honey Origins: ML and DL Methods for Botanical Classification”**  
-Nathan Mekuria Solomon, Cansu Turan, Durmuş Özdemir  
-Izmir Institute of Technology
+**Title:** Decoding Honey Origins: ML and DL Methods for Botanical Classification  
+**Author:** Nathan Mekuria Solomon  
+**Institution:** Izmir Institute of Technology  
 
-The poster is available in the `poster/` directory.
+The conference poster is included in the `poster/` directory.
 
-## Notes on Data
+---
 
-Due to data ownership and size constraints, raw FTIR datasets are not included in this repository. The code is structured to allow reproduction of the workflow with similar FTIR datasets.
+## Notes on Data Availability
+
+Due to data ownership and size constraints, the raw FTIR datasets are not included in this repository. The provided code is structured to allow reproduction of the workflow using similar FTIR datasets.
+
+---
 
 ## Author
 
-Nathan Mekuria Solomon  
-Background: Chemistry, Computer Engineering (minor), Data Analysis & Machine Learning
-
+**Nathan Mekuria Solomon**  
+Background in Chemistry, Computer Engineering (minor), and Data Analysis / Machine Learning
